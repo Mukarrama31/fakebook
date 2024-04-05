@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+header {
+    background-color: #fff;
+    color: #555; 
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+  
+.logo:hover {
+    color: #000; 
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}  
+nav ul li {
+    display: inline;
+    margin-right: 17px;
+    cursor: pointer;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s;
+}
+  
+nav ul li:hover {
+    color: #000; 
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #555; 
+    font-weight: 450;
+}
+nav ul li a:hover {
+    color: #000;
+}
+.image {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 60px;
+    transition: border-color 0.3s; 
+} 
+.image:hover {
+    border-color: #333;
+}
+  
+a {
+    text-decoration: none;
+}
+.avatar {
+    margin-right: 40px;
+}
+  
+.avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+main {
+    padding: 20px;
+}
+.postFormContainer {
+    width: 50%;
+    margin: 0 auto; 
+    margin-bottom: 20px;
+}
+  
+.postForm textarea {
+    width: calc(100% - 40px);
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.postForm input[type="file"] {
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+.postForm button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    float: right; 
+    margin-right: 16px;
+}
+.postForm button:hover {
+    background-color: #0056b3;
+}
+.postsSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    background-color: #f7f7f7; 
+    padding: 20px; 
+}
+.post-container {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(50% - 20px);
+    margin-bottom: 20px;
+    max-width: calc(50% - 20px);
+    position: relative;
+}
+.post-container img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px; 
+    float: left; 
+}
+.user-info-container {
+    overflow: hidden;
+}
+.user-name {
+    font-weight: bold;
+    margin: 0;
+    line-height: 50px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 50%; 
+    max-width: 500px;
+    font-size: 17px;
+    left: 50%;
+    top: 50%;
+}
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.close {
+    color: #aaa;
+    background-color: transparent;
+    font-size: 28px;
+    font-weight: 200;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+.close:hover,
+.close:focus {
+    color: #333; 
+}
+  
+@media only screen and (max-width: 600px) {
+    .modal {
+      width: 80%;
+      max-width: 300px;
+    }
+}
+.textarea-container {
+    position: relative;
+}
